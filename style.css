@@ -1,0 +1,139 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a; /* Preto grafite fundo */
+    color: #f0f0f0;
+    line-height: 1.6;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #2c2c2c;
+    padding: 1rem 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 4px solid #3e8c34;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #59b14c;
+}
+
+nav a {
+    color: #f0f0f0;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #a7e87f;
+}
+
+.hero.container {
+    background-color: #59b14c;
+    text-align: center;
+    padding: 4rem 4vw;
+    color: #fff;
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+.container, main {
+    width: 100%;
+    padding: 2rem 4vw;
+}
+
+.tema {
+    background-color: #212121;
+    border-left: 5px solid #59b14c;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.tema:nth-child(even) {
+    background-color: #181818;
+}
+
+.tema h2 {
+    color: #b8ffad;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.4rem;
+}
+
+.tema h3 {
+    color: #ffae70;
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.tema ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.tema li {
+    margin-bottom: 0.5rem;
+}
+
+strong {
+    color: #d4ffca;
+}
+
+footer {
+    background-color: #2c2c2c;
+    color: #ccc;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    border-top: 2px solid #3e8c34;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+}
